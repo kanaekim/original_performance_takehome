@@ -395,7 +395,7 @@ def do_kernel_test(
     for i, ref_mem in enumerate(reference_kernel2(mem, value_trace)):
         machine.run()
         inp_values_p = ref_mem[6]
-        if prints:
+        if print
             print(machine.mem[inp_values_p : inp_values_p + len(inp.values)])
             print(ref_mem[inp_values_p : inp_values_p + len(inp.values)])
         assert (
